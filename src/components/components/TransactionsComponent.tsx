@@ -6,14 +6,13 @@ function calcResult(oldPrice: number, newPrice: number) {
 
 export default async function Transactions(props: any) {
   const data = await getTransactions();
-  console.log(props.data)
 
   return (
     <div className="w-full">
-      <h1>Transactions</h1>
-      <ul>
+      <h1 className="text-xl text-center m-2">Transactions</h1>
+      <ul className="mb-5">
         {data.map((transaction: any) => (
-          <li key={transaction.id} className="space-x-12">
+          <li key={transaction.id} className="space-x-12 ">
             <span>{transaction.symbol}</span>
             <span>{transaction.units}</span>
             <span>

@@ -33,7 +33,7 @@ export default function SlideshowComponent({ children }: any) {
 
   return (
     <div>
-      <div className="relative">
+      <div className="relative mt-10">
         <div className="slideshow-container max-w-4xl mx-auto relative overflow-hidden">
           <div className="flex">
             {React.Children.map(children, (child, index) => (

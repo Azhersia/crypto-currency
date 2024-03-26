@@ -6,11 +6,11 @@ export async function getData() {
   return data.rows
 }
 
-export async function addTranscation(count: number, symbol: string) {
+export async function addTranscation(count: number, symbol: string, price: any) {
   console.log("buying", count, "of", symbol);
-
+  console.log(price)
   try {
-    await db.query("INSERT INTO transactions (units, symbol, purchaseprice) VALUES ($1, $2, $3)", [count, symbol, price])
+    await db.query("INSERT INTO transactions (units, symbol, purchaseprice) VALUES ($1, $2, $3)", [count, symbol, Number.parseFloat(price)])
     return 'Saved Successfully'
   } catch (error) {
     console.log(error);
