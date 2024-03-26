@@ -1,6 +1,6 @@
-import BuyButton from '@/components/components/BuyButton';
-import SlideshowComponent from '@/components/components/SlideshowComponent'
-import Transactions from '@/components/components/TransactionsComponent';
+import BuyButton from '@/components/BuyButton';
+import SlideshowComponent from '@/components/SlideshowComponent'
+import Transactions from '@/components/TransactionsComponent';
 import React from 'react'
 
 type crypto = {
