@@ -38,10 +38,10 @@ export default async function page() {
         ))}
       </SlideshowComponent>
 
-      <div className='flex flex-col justify-center items-center'>
-        <div>
+      <div className='flex flex-col justify-center items-center mt-10'>
+        <div className='flex flex-col'>
 
-          <Transactions />
+          <Transactions api={data.data} />
 
         </div>
       </div>

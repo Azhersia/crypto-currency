@@ -6,6 +6,7 @@ function calcResult(oldPrice: number, newPrice: number) {
 
 export default async function Transactions(props: any) {
   const data = await getTransactions();
+  console.log(props.data)
 
   return (
     <div className="w-full">
